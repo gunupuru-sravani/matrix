@@ -1,0 +1,49 @@
+/* g.sravani awdc rjy assignment 1 */
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+    int i,j,n,k,arr[100];
+    printf("enter rows and colums number");
+    scanf("%d",&n);
+    int a[n][n],b[n][n],c[n][n];
+     printf("enter A matrix values");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+    scanf("%d",&a[i][j]);
+        }   
+}
+ printf("enter B matrix values");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+    scanf("%d",&b[i][j]);
+        }   
+}
+
+for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            c[i][j]=0;
+for(k=0;k<n;k++)
+{
+    c[i][j]=c[i][j]+a[i][k]*b[k][j];
+}
+}
+}
+    printf("the multipliction values:\n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+    printf("%d\t",c[i][j]);
+}
+printf("\n");
+}
+return 0;
+}
